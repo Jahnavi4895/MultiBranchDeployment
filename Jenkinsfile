@@ -8,7 +8,7 @@ pipeline{
         stage('Clone the repo')
         {
             steps{
-            git 'https://github.com/Jahnavi4895/DevOpsCodeDemo.git'
+            git branch: 'html', url: 'https://github.com/Jahnavi4895/MultiBranchDeployment.git'
             }
         }
         stage('Build Image')
