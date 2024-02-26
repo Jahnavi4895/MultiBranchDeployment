@@ -6,7 +6,7 @@ pipeline{
          stage('Clone the repo')
         {
             steps{
-            git ''
+            git branch: 'nodejs', url: 'https://github.com/Jahnavi4895/MultiBranchDeployment.git'
             }
         }
         stage('Build Image')
